@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examiner Panel</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header>
+    <h1>Examiner Dashboard</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="student.html">Student</a></li>
+        <li><a href="examiner.html">Examiner</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="exam-management">
+      <h2>Exam Management</h2>
+
+      <h3>Create Exam & Questions</h3>
+      <form id="examForm">
+        <input type="text" id="examTitle" placeholder="Exam Title" required>
+        <textarea id="examQuestions" placeholder="Enter questions (one per line)" required></textarea>
+        <textarea id="examAnswers" placeholder="Enter correct answers (one per line)" required></textarea>
+        <input type="text" id="examDuration" placeholder="Duration (minutes)" required>
+        <button type="submit">Save Exam</button>
+      </form>
+
+      <h3>Schedule Exam</h3>
+      <form id="scheduleForm">
+        <select id="examSelect"></select>
+        <input type="date" id="examDate" required>
+        <input type="time" id="examTime" required>
+        <button type="submit">Schedule Exam</button>
+      </form>
+
+      <!-- Student Submissions -->
+      <h3>Student Submissions</h3>
+      <ul id="submissionsList"></ul>
+
+      <!-- Release Final Scores -->
+      <h3>Release Final Scores (Manual Override)</h3>
+      <form id="scoreForm">
+        <select id="submissionSelect"></select>
+        <input type="number" id="scoreInput" placeholder="Score" min="0" max="100" required>
+        <button type="submit">Save Score</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>EXAMINATION © 2025</p>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>

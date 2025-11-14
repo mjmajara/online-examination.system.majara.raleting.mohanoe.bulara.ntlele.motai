@@ -1,0 +1,103 @@
+
+* { box-sizing: border-box;
+  margin: 0; padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  background-color: #c7deff;
+  color: #ece4e4;
+  line-height: 1.6;
+}
+header, footer {
+  background-color: #083bc8;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+h1, h2, h3 {
+  margin-bottom: 0.5rem;
+}
+main {
+  padding: 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #facc15;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+form input, form select, form textarea, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+form button {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+form button:hover {
+  background-color: #2563eb;
+}
+
+#submissionsList {
+  list-style: none;
+  padding: 0;
+}
+#submissionsList li {
+  background-color: #ffffff;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s; 
+}
+#submissionsList li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.score {
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px; color: #ffffff;
+}
+.score.pass {
+  background-color: #22c55e;
+}
+.score.fail {
+  background-color: #ef4444;
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; gap: 0.5rem;
+  }
+  main { 
+    padding: 0.5rem;
+  }
+}

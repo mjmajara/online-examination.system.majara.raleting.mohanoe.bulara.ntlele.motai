@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Administrator Dashboard</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <header>
+    <div class="logo"><h2>Admin Dashboard</h2></div>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="student.html">Student</a></li>
+        <li><a href="examiner.html">Examiner</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="users">
+      <h2>Manage Users</h2>
+      <form id="userForm">
+        <input type="text" id="userName" placeholder="Enter Name" required />
+        <select id="userRole">
+          <option value="Student">Student</option>
+          <option value="Examiner">Examiner</option>
+          <option value="Admin">Admin</option>
+        </select>
+        <button type="submit">Add User</button>
+      </form>
+      <table>
+        <thead>
+          <tr><th>Name</th><th>Role</th><th>Action</th></tr>
+        </thead>
+        <tbody id="userList"></tbody>
+      </table>
+    </section>
+
+    <section id="subjects">
+      <h2>Manage Subjects</h2>
+      <form id="subjectForm">
+        <input type="text" id="subjectName" placeholder="Enter Subject" required />
+        <button type="submit">Add Subject</button>
+      </form>
+      <ul id="subjectList"></ul>
+    </section>
+
+    <section id="questions">
+      <h2>Question Bank</h2>
+      <form id="questionForm">
+        <input type="text" id="questionText" placeholder="Enter Question" required />
+        <input type="text" id="answerText" placeholder="Enter Answer" required />
+        <button type="submit">Add Question</button>
+      </form>
+      <ul id="questionList"></ul>
+    </section>
+
+    <section id="reports">
+      <h2>Performance Reports</h2>
+      <p>Admin can monitor overall performance across all users and exams.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>EXAMINATION © 2025</p>
+  </footer>
+
+  <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Examination System</title>
+    <link rel="stylesheet" href="exam.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Online Examination System</h1>
+        </header>
+
+        <form id="examForm">
+            <label class="student-name">Enter your name: 
+                <input type="text" id="studentName" placeholder="Your Name" required>
+            </label>
+
+            <div class="question">
+                <p>1. What is 5 + 3?</p>
+                <input type="radio" name="q1" value="8">8<br>
+                <input type="radio" name="q1" value="9">9<br>
+                <input type="radio" name="q1" value="7">7<br>
+            </div>
+
+            <div class="question">
+                <p>2. What is the capital of France?</p>
+                <input type="radio" name="q2" value="London">London<br>
+                <input type="radio" name="q2" value="Berlin">Berlin<br>
+                <input type="radio" name="q2" value="Paris">Paris<br>
+            </div>
+
+            <div class="question">
+                <p>3. Which language is used for web pages?</p>
+                <input type="radio" name="q3" value="Python">Python<br>
+                <input type="radio" name="q3" value="Javascript">Javascript<br>
+                <input type="radio" name="q3" value="C++">C++<br>
+            </div>
+
+            <div class="question">
+                <p>4. What is HTML in full?</p>
+                <input type="radio" name="q4" value="hyper time module learning">hyper time module learning<br>
+                <input type="radio" name="q4" value="high technology module learning">high technology module learning<br>
+                <input type="radio" name="q4" value="HyperText Markup Language">HyperText Markup Language<br>
+            </div>
+
+            <div class="question">
+                <p>5. What does &lt;br&gt; in HTML mean?</p>
+                <input type="radio" name="q5" value="line break">line break<br>
+                <input type="radio" name="q5" value="next line">next line<br>
+                <input type="radio" name="q5" value="bring row">bring row<br>
+            </div>
+
+            <div class="question">
+                <p>6. What is a correct format to add an image on your website?</p>
+                <input type="radio" name="q6" value="-image src(name)">-image src(name)<br>
+                <input type="radio" name="q6" value='img src=""'>img src=""<br>
+                <input type="radio" name="q6" value='img src="" alt="">'>img src="" alt ""<br>
+            </div>
+
+            <button type="button" id="submitBtn">Submit</button>
+        </form>
+
+        <div id="score"></div>
+    </div>
+
+    <script src="exam.js"></script>
+</body>
+</html>
