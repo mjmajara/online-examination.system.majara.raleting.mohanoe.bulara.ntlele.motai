@@ -64,6 +64,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
+    <header>
+        <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="student.html">Student</a></li>
+        <li><a href="examiner.html">Examiner</a></li>
+      </ul>
+    </nav>
+    </header>
 
 <div class="login-container">
     <h2>Login</h2>
@@ -94,4 +104,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
     <script src="login.js"></script>
 </html>
+
 
